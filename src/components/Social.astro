@@ -1,0 +1,20 @@
+---
+const { platform, username } = Astro.props;
+const url = platform.toLowerCase() === "linkedin" ? `https://www.${platform}.com/in/${username}` : `https://www.${platform}.com/${username}`;
+---
+
+<style>
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-images {
+    padding-right: 5px;
+  }
+</style>
+
+<p class="logo-container">
+  <img src={`/images/${platform.toLowerCase()}_icon.png`} width="25px" height="25px" alt={`${platform}`} class="logo-images" /> Keep in contact with me
+  on <a href={url}>{platform}</a>
+</p>

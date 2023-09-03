@@ -1,31 +1,8 @@
 ---
-const username = "daniela-bonvini";
+import Social from "./Social.astro";
 ---
 
-<style>
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-images {
-    padding-right: 5px;
-  }
-</style>
-
 <footer>
-  <p class="logo-container">
-    <img src="/images/LinkedIn_icon.png" width="25px" height="25px" alt="LinkedIn logo" class="logo-images" /> Keep in contact with me on <a
-      href={`https://www.linkedin.com/in/${username}`}
-    >
-      LinkedIn</a
-    >
-  </p>
-  <p class="logo-container">
-    <img src="/images/GitHub_icon.png" width="25px" height="25px" alt="GitHub logo" /> Learn more about my projects on <a
-      href={`https://www.github.com/${username}`}
-    >
-      GitHub</a
-    >
-  </p>
+  <Social platform="GitHub" username="daniela-bonvini" />
+  <Social platform="LinkedIn" username="daniela-bonvini" />
 </footer>

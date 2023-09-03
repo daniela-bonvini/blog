@@ -1,34 +1,18 @@
 ---
-import "../styles/global.css";
-
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Daniela's blog";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Navigation />
-
-    <h1>Hello there, coders</h1>
-    <!-- inserire immagine pucciosa -->
-    <p>
-      Welcome to my learning blog! Some time ago I found out about the concept of <a href="https://blackgirlbytes.dev/how-to-learn-in-public"
-        >learning in public</a
-      > but I never really had the chance to try it out. That was until recently I heard lots of good things about Astro, and knowing it is perfect to
-      create a blog, I thought it would be a great opportunity to get two birds with one stone and both learn about it and create a personal blog in which
-      jot down everything new I come across and save it for future reference (mine and others both). As I'm still learning about Astro's features the site
-      will probably change a lot in the next couple of weeks/months, as I will be adding new features and trying out new things. So here you go, come with
-      me on this amazing learning journey!
-    </p>
-
-    <Footer />
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h1>Hello there, coders</h1>
+  <!-- inserire immagine pucciosa -->
+  <p>
+    Welcome to my learning blog! Some time ago I found out about the concept of <a href="https://blackgirlbytes.dev/how-to-learn-in-public"
+      >learning in public</a
+    > but I never really had the chance to try it out. That was until recently I heard lots of good things about Astro, and knowing it is perfect to create
+    a blog, I thought it would be a great opportunity to get two birds with one stone and both learn about it and create a personal blog in which jot down
+    everything new I come across and save it for future reference (mine and others both). As I'm still learning about Astro's features the site will probably
+    change a lot in the next couple of weeks/months, as I will be adding new features and trying out new things. So here you go, come with me on this amazing
+    learning journey!
+  </p>
+</BaseLayout>

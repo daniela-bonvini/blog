@@ -1,44 +1,16 @@
 ---
 import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Navigation from "../components/Navigation.astro";
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About me";
-const skillColor = "red";
-const fontWeight = "bold";
-const textCase = "uppercase";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-    <style define:vars={{ skillColor, fontWeight, textCase }}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-      .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-    </style>
-  </head>
-  <body>
-    <Navigation />
-
-    <h1>{pageTitle}</h1>
-    <p>
-      Hi, I'm Daniela, I'm a software engineer and I love to learn new things. Having studied foreign languages for many years, I stumbled upon HTML
-      and CSS and have been fascinated by the frontend side of programming ever since, marveling at the enormous creativity this world offers. I like
-      to think of the web as a blank canvas, and I'm always excited to craft something new with code. I love the challenge of creating something
-      visually appealing and functional that people can interact with and enjoy. I've decided to start this blog as a memento for myself to remember
-      what I've learned in my day-to-day coding and to share my knowledge with others. I hope you'll find something useful here!
-    </p>
-    <Footer />
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h1>{pageTitle}</h1>
+  <p>
+    Hi, I'm Daniela, I'm a software engineer and I love to learn new things. Having studied foreign languages for many years, I stumbled upon HTML and
+    CSS and have been fascinated by the frontend side of programming ever since, marveling at the enormous creativity this world offers. I like to
+    think of the web as a blank canvas, and I'm always excited to craft something new with code. I love the challenge of creating something visually
+    appealing and functional that people can interact with and enjoy. I've decided to start this blog as a memento for myself to remember what I've
+    learned in my day-to-day coding and to share my knowledge with others. I hope you'll find something useful here!
+  </p>
+</BaseLayout>
