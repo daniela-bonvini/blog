@@ -1,6 +1,5 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
+import Layout from "../../layouts/Layout.astro";
 const allPosts = await Astro.glob("../posts/*.md");
 const tags = [...new Set(allPosts.flatMap((post) => post.frontmatter.tags))];
 const pageTitle = "Tag Index";
@@ -27,7 +26,7 @@ const pageTitle = "Tag Index";
   }
 </style>
 
-<BaseLayout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle}>
   <div class="tags">
     {
       tags.map((tag) => (
@@ -37,4 +36,4 @@ const pageTitle = "Tag Index";
       ))
     }
   </div>
-</BaseLayout>
+</Layout>

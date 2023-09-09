@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import BlogPost from "../../components/BlogPost.astro";
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob("../posts/*.md");
@@ -19,9 +19,16 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<BaseLayout pageTitle={tag}>
+<!-- 
+<Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
-    {posts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+    {posts.map((post) => <Card url={post.url} title={post.frontmatter.title} body={post.frontmatter.description} image={post.frontmatter?.image} />)}
   </ul>
-</BaseLayout>
+</Layout> -->
+<Layout pageTitle={tag}>
+  <p>Posts tagged with {tag}</p>
+  <ul role="list" class="link-card-grid">
+    {posts.map((post) => <Card url={post.url} title={post.frontmatter.title} body={post.frontmatter.description} image={post.frontmatter?.image} />)}
+  </ul>
+</Layout>
