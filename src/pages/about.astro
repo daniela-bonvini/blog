@@ -1,10 +1,10 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About me";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle}>
   <h1>{pageTitle}</h1>
   <p>
     Hi, I'm Daniela, I'm a software engineer and I love to learn new things. Having studied foreign languages for many years, I stumbled upon HTML and
@@ -13,4 +13,18 @@ const pageTitle = "About me";
     appealing and functional that people can interact with and enjoy. I've decided to start this blog as a memento for myself to remember what I've
     learned in my day-to-day coding and to share my knowledge with others. I hope you'll find something useful here!
   </p>
-</BaseLayout>
+  <h2>Skills</h2>
+  <div class="link-images">
+    <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />
+    <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+    <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
+    <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+    <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+  </div>
+  <h2>Interests</h2>
+  <p>
+    I love RPG videogames (yes, the 100-hour Japanese kind), reading, and cooking plant-based meals. I'<main></main> a big fan of the fantasy genre and
+    I'm always up for a good movie or TV show, moreso if it is in a cartoon form. I'm a big animal lover and I have two cats named Julie Mao and Coraline,
+    who are the cutest thing in the world.
+  </p>
+</Layout>
