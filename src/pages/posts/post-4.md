@@ -41,11 +41,11 @@ Here's an example of the before and after the truncation:
 
 ### Before
 
-<img title="before" alt="Zsh branch name not truncated" src="../src/images/zsh/before.png" width="550px">
+<img title="before" alt="Zsh branch name not truncated" src="/images/zsh/before.png" width="550px">
 
 ### After
 
-<img title="after" alt="Zsh branch name truncated" src="../src/images/zsh/after.png"  width="550px">
+<img title="after" alt="Zsh branch name truncated" src="/images/zsh/after.png"  width="550px">
 
 ## Conclusion
 

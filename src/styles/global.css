@@ -78,6 +78,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0.5rem 1rem;
+  border-bottom: solid 3px #1e1e2e;
 }
 
 .title-link,
