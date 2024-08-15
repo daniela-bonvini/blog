@@ -4,25 +4,19 @@ import Social from "./Social.astro";
 const year = new Date().getFullYear();
 ---
 
-<footer>
-  <div>
+<footer class="footer">
+  <div class="socials-container">
     <Social platform="GitHub" username="daniela-bonvini" />
     <Social platform="LinkedIn" username="daniela-bonvini" />
     <Social link="https://dev.to/danielabonvini" platform="DEV" />
   </div>
 </footer>
 <style>
-  div {
-    margin: 4rem 0;
-    text-align: center;
+  .gooter {
+    margin-top: 1rem;
   }
-
-  small {
-    font-family: "Inter", sans-serif;
-  }
-
-  small a {
-    color: #375a7f;
-    text-decoration: none;
+  .socials-container {
+    display: flex;
+    justify-content: space-evenly;
   }
 </style>
