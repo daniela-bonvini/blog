@@ -24,13 +24,14 @@ const pageTitle = "Home page";
     </a>
   </div>
 </Layout>
+
 <style>
   /* small */
   small {
-    background-color: #584966;
-    color: #fdebf3;
+    background-color: var(--purple);
+    color: var(--pinkish-white);
     border-radius: 6px;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     padding: 0.3em 0.6em 0.2em;
   }
@@ -41,31 +42,18 @@ const pageTitle = "Home page";
     border: 2px solid #78c2ad;
     border-radius: 8px;
     color: #78c2ad;
-    font: 600 16px "Josefin Sans", sans-serif;
+    font: 600 16px "Inter", sans-serif;
     padding: 8px 16px;
     transition: background-color 0.4s, color 0.4s;
   }
 
   button:hover {
     background-color: #78c2ad;
-    color: #fdebf3;
+    color: var(--pinkish-white);
     cursor: pointer;
   }
 
   .button {
     text-align: center;
-  }
-
-  /* Skill images */
-  .link-images img {
-    margin: 16px 4px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .link-images img {
-      height: 30px;
-      width: 30px;
-      margin: 16px 1px;
-    }
   }
 </style>

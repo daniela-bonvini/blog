@@ -10,7 +10,7 @@ tags: ["angular", "intersection observer", "sticky menu", "highlight"]
 
 To achieve this scrolling functionality, we're primarily working with Angular's built-in event binding and a bit of DOM manipulation. Here's how it works:
 
-In our HTML template, we have a menu constructed using an unordered list (<ul>) and Angular's \*ngFor directive to dynamically generate menu items based on an array of labels (labels in our TypeScript component). Each menu item is a clickable <span> element associated with a specific label.
+In our HTML template, we have a menu constructed using an unordered list (\<ul>) and Angular's \*ngFor directive to dynamically generate menu items based on an array of labels (labels in our TypeScript component). Each menu item is a clickable <span> element associated with a specific label.
 
 ### The HTML Structure
 

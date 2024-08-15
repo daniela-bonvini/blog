@@ -1,3 +1,6 @@
+/* import color variables */
+@import "./variables.css";
+
 /* Import fonts */
 @font-face {
   font-family: "Baskerville";
@@ -18,8 +21,8 @@
 /* Global styles */
 
 html {
-  background-color: #1e1e2e;
-  color: #fdebf3;
+  background-color: var(--dark-blue);
+  color: var(--pinkish-white);
 }
 
 body {
@@ -36,7 +39,7 @@ h4,
 h5,
 h6 {
   font-family: "Baskerville", cursive;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h1 {
@@ -79,18 +82,19 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0.5rem 1rem;
-  border-bottom: solid 3px #1e1e2e;
+  border-bottom: solid 3px var(--dark-blue);
 }
 
 .title-link,
 .nav-links {
   font-family: "Baskerville", cursive;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .title-link a,
 .nav-links a {
-  color: #fdebf3;
+  color: var(--pinkish-white);
   text-decoration: none;
 }
 
@@ -125,29 +129,29 @@ a:focus {
 
 /* Theme Icon */
 html.light {
-  background-color: var(--millenial-pink);
-  color: #1e1e2e;
+  background-color: var(--pinkish-white);
+  color: var(--dark-blue);
 }
 
 .light .title-link a {
-  color: #1e1e2e;
+  color: var(--dark-blue);
 }
 
 .light .card-title {
   font-family: "Baskerville", cursive;
-  color: #1e1e2e;
+  color: var(--dark-blue);
 }
 
 .light .card-txt {
-  color: #1e1e2e;
+  color: var(--dark-blue);
 }
 
 .light .nav-links a {
-  color: #1e1e2e;
+  color: var(--dark-blue);
 }
 
 .light .link-card > a {
-  color: #1e1e2e;
+  color: var(--dark-blue);
 }
 
 /* Media Query */

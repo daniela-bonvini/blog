@@ -19,6 +19,7 @@ const { url, image, title, body } = Astro.props;
     </p>
   </a>
 </li>
+
 <style>
   .link-card {
     list-style: none;
@@ -32,22 +33,11 @@ const { url, image, title, body } = Astro.props;
     text-decoration: none;
     line-height: 1.4;
     border-radius: 8px;
-    color: #fdebf3;
-  }
-
-  .img {
-    text-align: center;
-  }
-
-  img {
-    border-radius: 16px;
+    color: var(--pinkish-white);
   }
 
   h3 {
     margin: 0;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5rem;
-    font-weight: normal;
     text-align: center;
   }
 
@@ -55,7 +45,6 @@ const { url, image, title, body } = Astro.props;
     font-size: 1em;
     line-height: 1.5;
     text-indent: 0;
-    text-align: center;
     margin: 0.5rem 0 0;
   }
 
