@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Truncating branch name in agnoster theme with oh my zsh"
+title: "Truncating branch name in agnoster theme with Oh My Zsh"
 pubDate: 13/10/2023
 description: "How to truncate branch name at tot characters in agnoster theme with oh my zsh framework for zsh shell"
 image: "/blog.png"

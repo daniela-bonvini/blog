@@ -55,13 +55,20 @@ h2 {
   margin-bottom: 0;
 }
 
-/* Paragraphs */
+/* Paragraphs and lists */
+ol,
+ul,
+dl,
 p {
   font-family: "Inter", sans-serif;
   font-size: 1.1em;
   hyphens: auto;
   line-height: 1.5;
   text-indent: 1em;
+
+  li {
+    list-style-type: square;
+  }
 }
 
 /* Gifs */

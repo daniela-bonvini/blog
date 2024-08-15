@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Sticky menu highlighting active section when scrolling, using Angular framework and Intersection Observer - Part one"
+title: "Sticky menu highlight active section when scrolling - Part one"
 pubDate: 03/09/2023
 description: "Sticky menu highlighting active section when scrolling, using Angular framework and Intersection Observer"
 image: "/blog.png"

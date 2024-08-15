@@ -1,6 +1,9 @@
 ---
-const { platform, username } = Astro.props;
-const url = platform.toLowerCase() === "linkedin" ? `https://www.${platform}.com/in/${username}` : `https://www.${platform}.com/${username}`;
+const { platform, username, link } = Astro.props;
+const url =
+  link ?? (platform.toLowerCase() === "linkedin" ? `https://www.${platform}.com/in/${username}` : `https://www.${platform}.com/${username}`);
+const src = platform ? `/${platform.toLowerCase()}_icon.png` : undefined;
+const alt = platform ? `${platform} logo` : undefined;
 ---
 
 <style>
@@ -15,7 +18,5 @@ const url = platform.toLowerCase() === "linkedin" ? `https://www.${platform}.com
 </style>
 
 <p class="logo-container">
-  <img src={`/${platform.toLowerCase()}_icon.png`} width="25px" height="25px" alt={`${platform}`} class="logo-images" /> Keep in contact with me on <a
-    href={url}>{platform}</a
-  >
+  <img src={src} width="25px" height="25px" alt={alt} class="logo-images" /> Keep in contact with me on <a href={url} target="_blank">{platform}</a>
 </p>
