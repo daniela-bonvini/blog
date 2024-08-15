@@ -5,24 +5,15 @@ const year = new Date().getFullYear();
 ---
 
 <footer>
-  <div>
+  <div class="footer-container">
     <Social platform="GitHub" username="daniela-bonvini" />
     <Social platform="LinkedIn" username="daniela-bonvini" />
     <Social link="https://dev.to/danielabonvini" platform="DEV" />
   </div>
 </footer>
 <style>
-  div {
-    margin: 4rem 0;
-    text-align: center;
-  }
-
-  small {
-    font-family: "Inter", sans-serif;
-  }
-
-  small a {
-    color: #375a7f;
-    text-decoration: none;
+  .footer-container {
+    display: flex;
+    justify-content: space-evenly;
   }
 </style>
