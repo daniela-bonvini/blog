@@ -1,14 +1,15 @@
 /* Import fonts */
 @font-face {
-  font-family: "Pacifico";
-  src: url("/fonts/Pacifico-Regular.woff") format("woff");
+  font-family: "Baskerville";
+  src: url("/fonts/LibreBaskerville-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
+  /* font-style: normal; not needed for NON italic variable fonts */
   font-display: swap;
+  font-stretch: normal;
 }
 @font-face {
-  font-family: "Josefin Sans";
-  src: url("/fonts/JosefinSans-Regular.woff") format("woff");
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -34,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Pacifico", cursive;
+  font-family: "Baskerville", cursive;
   font-weight: normal;
 }
 
@@ -53,7 +54,7 @@ h2 {
 
 /* Paragraphs */
 p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1em;
   hyphens: auto;
   line-height: 1.5;
@@ -83,7 +84,7 @@ p {
 
 .title-link,
 .nav-links {
-  font-family: "Pacifico", cursive;
+  font-family: "Baskerville", cursive;
   font-size: 1.3rem;
 }
 
@@ -104,7 +105,7 @@ a:focus {
 .nav-links {
   align-items: center;
   display: flex;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   justify-content: space-between;
   text-align: right;
@@ -133,6 +134,7 @@ html.light {
 }
 
 .light .card-title {
+  font-family: "Baskerville", cursive;
   color: #1e1e2e;
 }
 
